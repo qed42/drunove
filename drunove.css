@@ -1,0 +1,140 @@
+  
+  a:hover {
+    color:#2970A6;
+    text-decoration:none;
+  }
+  
+  a {
+    color:#4C4C4C;
+    text-decoration:none;
+  }
+  
+	.border {
+		border:1px solid #e0e0e0;
+	}
+
+	.padall10 {
+    padding:10px;
+	}
+	
+	.padall20 {
+    padding:20px;
+  }
+  
+	
+	body { 
+    background:#BEC3C6 url(images/bg.jpg) repeat-x;
+	} 
+	
+	.container {
+	  padding:20px 0;
+	}
+	
+	#header {
+	  background:url(images/header.jpg) 0 0 no-repeat;
+	  height:90px;
+	  border-bottom:1px solid #A6A6A6;
+	  overflow:hidden;
+	  color:#fff;
+	}
+	
+	#header h1 {
+	 font-size:32px;
+	}
+	
+	#logo-floater h1 a, #logo-floater h1 a:hover, #header a, #header a:hover {
+    color:#fff;
+    text-decoration:none;
+	}
+	
+	.slogan {
+    color:#fff;
+    font-weight:normal;
+    margin-top:10px;
+	}
+	
+	#content {
+    background:#fff;
+	}
+	
+	.sidebar-second-inner {
+    border-left:1px solid #e0e0e0;
+	}
+	
+	.menu-search {
+    background:#fff;
+	}
+	
+	.bordertopbottom {
+    border-top:1px solid #cbcbcb;
+    border-bottom:1px solid #cbcbcb;
+	}
+	
+	#footer {
+    border-top:1px solid #cbcbcb;
+    background:url(images/footer.jpg);
+    height:88px;
+    
+	}
+	
+	.sidebar-second-inner {
+    background:#f7f7f7;
+    height:100%;
+  }
+	
+	#main-menu li {
+  display:inline;
+  list-style:none;
+	}
+	#main-menu li a {
+	  background:transparent url(images/menu.gif) no-repeat;
+	  display:block;
+	  color:#382E1F;
+	  height:31px;
+	  line-height:31px;
+	  padding:0 20px;
+	  margin-left:-10px;
+	  text-decoration:none;
+	  font-size:11px;
+	  float:left;
+	  z-index:1;
+	}
+	#main-menu li a:hover {
+	  background-position:0 -31px;
+	}
+	
+  #main-menu li.first a {
+    background-position:0 -93px;
+    width:45px;
+    padding:0;
+    margin-left:0;
+    text-indent:-999em;
+  }
+  
+  #main-menu li.first a:hover {
+    background-position:0 -124px;
+  }
+  
+  #main-menu li.first a {
+    background-position:0 -155px;
+  }
+  
+  
+  
+  #search-box {
+	  background: url(images/searchbox.gif) no-repeat;
+	  width:209px;
+	  height:21px;
+	  display:block;
+	  float:right;
+	  margin-top:4px;
+	  margin-right:10px !important;
+	  margin-right:5px;
+	  padding:3px 2px;
+	}
+
+	ul.links,ul.links li {
+    padding:0;
+    margin:0;
+	}
+	
