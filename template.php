@@ -5,24 +5,15 @@ function drunove_process_html(&$vars) {
 }
 
 function drunove_preprocess_search_block_form(&$variables) {
-	
-  $variables['search'] = array();
   $variables['form']['search_block_form']['#attributes'] = array('class' => 'search-input');
   $variables['form']['submit']['#attributes'] = array('class' => 'search');
-  $variables['form']['submit']['#value'] = t('');
-  $hidden = array();
-  // Provide variables named after form keys so themers can print each element independently.
-  foreach (element_children($variables['form']) as $key) {
-    $type = $variables['form'][$key]['#type'];
-    if ($type == 'hidden' || $type == 'token') {
-      $hidden[] = drupal_render($variables['form'][$key]);
-    }
-    else {
-      $variables['search'][$key] = drupal_render($variables['form'][$key]);
-    }
-  }
+  $variables['form']['submit']['#value'] = '';
+  $variables['form']['search_block_form']['#title'] = '';
   // Hidden form elements have no value to themers. No need for separation.
-  $variables['search']['hidden'] = implode($hidden);
+  unset($variables['form']['search_block_form']['#printed']);
+  $variables['search']['search_block_form'] = drupal_render($variables['form']['search_block_form']);
+  unset($variables['form']['submit']['#printed']);
+  $variables['search']['submit'] = drupal_render($variables['form']['submit']);
   // Collect all form elements to make it easier to print the whole form.
-  $variables['search_form'] = drupal_render($variables['form']);  
+  $variables['search_form'] = implode($variables['search']);  
 }
