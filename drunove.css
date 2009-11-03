@@ -132,7 +132,26 @@
 	  margin-right:5px;
 	  padding:3px 2px;
 	}
-
+  
+  #search-box .search-input {
+    background:none;
+    border:0px;
+    width:185px;
+    float:left;
+    margin-right:2px;
+    padding-left:2px;
+  }
+  
+  #search-box .search {
+    background:none;
+    border:0px;
+    width:18px;
+    height:18px;
+    cursor:pointer;
+    float:left;
+    margin-top:1px;
+  }
+  
 	ul.links,ul.links li {
     padding:0;
     margin:0;
