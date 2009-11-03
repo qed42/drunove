@@ -5,8 +5,8 @@ function drunove_process_html(&$vars) {
 }
 
 function drunove_preprocess_search_block_form(&$variables) {
-  $variables['form']['search_block_form']['#attributes'] = array('class' => 'search-input');
-  $variables['form']['submit']['#attributes'] = array('class' => 'search');
+  $variables['form']['search_block_form']['#attributes']['class'] = array('search-input');
+  $variables['form']['submit']['#attributes']['class'] = array('search');
   $variables['form']['submit']['#value'] = '';
   $variables['form']['search_block_form']['#title'] = '';
   // Hidden form elements have no value to themers. No need for separation.

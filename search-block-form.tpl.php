@@ -35,8 +35,6 @@
 ?>
 <div class="container-inline">
   <?php 
-    print $search['search_block_form'];
-    print $search['submit'];
-    print $search['hidden'];
+    print $search_form;
   ?>  
 </div>
