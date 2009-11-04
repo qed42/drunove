@@ -1,13 +1,14 @@
-; $Id: stark.info,v 1.2 2009/09/29 16:30:30 webchick Exp $
+
 name = drunove
 description = Two column,right sidebar,tableless,fluid,xhtml and css verified theme which is actually ported from wordpress inove theme. Blueprint CSS Framework used.
-package = Core
-version = VERSION
-core = 7.x
 engine = phptemplate
-stylesheets[screen, projector][] = bp/screen.css
+version = "7.x-1.x"
+core = "7.x"
+
+;stylesheet inclusion
+stylesheets[screen][] = bp/screen.css
 stylesheets[print][] = bp/print.css
-stylesheets[screen, projector][] = drunove.css
+stylesheets[screen][] = drunove.css
 
 regions[search_box] = Search Box
 regions[sidebar_second] = Right sidebar
@@ -16,7 +17,3 @@ regions[footer] = Footer
 regions[header] = Header
 regions[help] = Help
 regions[highlight] = Highlight
-
-version = "7.x-dev"
-core = "7.x"
-project = "drupal"

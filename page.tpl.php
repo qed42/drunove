@@ -1,7 +1,3 @@
-<?php
-// $Id: page.tpl.php,v 1.6 2009/10/17 01:15:40 webchick Exp $
-?>
-
   <div id="page" class="container">
   
   	<div id="header" class="span-24 last">
