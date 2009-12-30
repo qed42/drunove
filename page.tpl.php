@@ -27,12 +27,12 @@
 	    </div></div>
     </div>
     <div id="content" class="clearfix span-24 last">
-      <div class="span-18 middle-content"><div class="middle-content-inner padall10">
+      <div class="span-18 middle-content"><div class="middle-content-inner padleftrightbottom10">
         <?php print $breadcrumb; ?>
         <?php if ($page['highlight']): ?><div id="highlight"><?php render($page['highlight']); ?></div><?php endif; ?>
         <?php if ($tabs): ?><div id="tabs-wrapper" class="clearfix"><?php endif; ?>
-        <?php if ($title): ?><h2<?php print $tabs ? ' class="with-tabs"' : '' ?>><?php print $title ?></h2><?php endif; ?>
-        <?php if ($tabs): ?><ul class="tabs primary"><?php print render($tabs) ?></ul></div><?php endif; ?>
+          <?php if ($title): ?><h2<?php print $tabs ? ' class="with-tabs"' : '' ?>><?php print $title ?></h2><?php endif; ?>
+        <?php if ($tabs): ?><?php print render($tabs) ?></div><?php endif; ?>
         <?php if (menu_secondary_local_tasks()): ?><ul class="tabs secondary"><?php print render(menu_secondary_local_tasks()) ?></ul><?php endif; ?>
         <?php if ($show_messages && $messages): print $messages; endif; ?>
         <?php print render($page['help']); ?>
