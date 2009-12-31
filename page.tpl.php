@@ -4,7 +4,10 @@
   		<div id="logo-floater"><div class="padall20">
         <?php if ($logo || $site_title): ?>
           <h1><a href="<?php print $front_page ?>" title="<?php print $site_name ?>">
-         <?php print $site_name ?>
+          <?php if ($logo): ?>
+            <img align="left" src="<?php print $logo ?>" alt="<?php print $site_name ?>" id="logo" />
+          <?php endif; ?>
+          <?php print $site_name ?>
           </a></h1>
         <?php endif; ?>
         <h6 class="slogan"><?php print $site_slogan ?></h6>
