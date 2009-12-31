@@ -13,12 +13,12 @@ a img {border:none;}
 
 body {font-size:75%;color:#222;background:#fff;font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;line-height: 160%;color:#333;}
 h1, h2, h3, h4, h5, h6 {font-weight:bold;color:#111;}
-h1 {font-size:20px;}
-h2 {font-size:18px;}
-h3 {font-size:16px;}
-h4 {font-size:14px;}
-h5 {font-size:13px;}
-h6 {font-size:12px;}
+h1 {font-size:20px;color:#835744;}
+h2 {font-size:14px;color:#835744;}
+h3 {font-size:12px;color:#835744;}
+h4 {font-size:12px;color:#835744;}
+h5 {font-size:12px;color:#835744;}
+h6 {font-size:12px;color:#835744;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 1.5em;}
 p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}

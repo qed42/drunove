@@ -1,19 +1,20 @@
-
-name = drunove
-description = Two column,right sidebar,tableless,fluid,xhtml and css verified theme which is actually ported from wordpress inove theme. Blueprint CSS Framework used.
-engine = phptemplate
-version = "7.x-1.x"
-core = "7.x"
-
-;stylesheet inclusion
-stylesheets[screen][] = bp/screen.css
-stylesheets[print][] = bp/print.css
-stylesheets[screen][] = drunove.css
-
-regions[search_box] = Search Box
-regions[sidebar_second] = Right sidebar
-regions[content] = Content
-regions[footer] = Footer
-regions[header] = Header
-regions[help] = Help
-regions[highlight] = Highlight
+  ; $Id: drunove.info,v 1.0 2009/12/31 12:45:00 $
+  
+  name = drunove
+  description = A <a target="_blank" href="http://www.qed42.com">QED42's</a> theme. Two column,right sidebar,tableless,fluid,xhtml and css verified theme which is actually ported from wordpress inove theme. Blueprint CSS Framework used.
+  engine = phptemplate
+  version = "7.x-1.x"
+  core = "7.x"
+  
+  ;stylesheet inclusion
+  stylesheets[screen][] = bp/screen.css
+  stylesheets[print][] = bp/print.css
+  stylesheets[screen][] = drunove.css
+  
+  regions[search_box] = Search Box
+  regions[sidebar_second] = Right sidebar
+  regions[content] = Content
+  regions[footer] = Footer
+  regions[header] = Header
+  regions[help] = Help
+  regions[highlight] = Highlight
