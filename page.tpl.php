@@ -5,9 +5,9 @@
         <?php if ($logo || $site_title): ?>
           <h1><a href="<?php print $front_page ?>" title="<?php print $site_name ?>">
           <?php if ($logo): ?>
-            <img align="left" src="<?php print $logo ?>" alt="<?php print $site_name ?>" id="logo" />
+            <img src="<?php print $logo ?>" alt="<?php print $site_name ?>" id="logo" />
           <?php endif; ?>
-          <?php print $site_name ?>
+          <span class="logotext"><?php print $site_name ?></span>
           </a></h1>
         <?php endif; ?>
         <h6 class="slogan"><?php print $site_slogan ?></h6>
@@ -30,7 +30,7 @@
 	    </div></div>
     </div>
     <div id="content" class="clearfix span-24 last">
-      <div class="span-18 middle-content"><div class="middle-content-inner padleftrightbottom10">
+      <div class="span-17 middle-content"><div class="middle-content-inner padleftrightbottom10">
         <?php print $breadcrumb; ?>
         <?php if ($page['highlight']): ?><div id="highlight"><?php render($page['highlight']); ?></div><?php endif; ?>
         <?php if ($tabs): ?><div id="tabs-wrapper" class="clearfix"><?php endif; ?>
@@ -44,9 +44,12 @@
           <?php print render($page['content']); ?>
         </div>
       </div></div>
-      <div class="span-6 last sidebar-second"><div class="sidebar-second-inner padall10">
+      <div class="span-7 last sidebar-second"><div class="sidebar-second-inner padall10">
         <div id="sidebar-second" class="sidebar">
           <?php if ($page['sidebar_second']): ?>
+            <div class="block-feed">
+              <?php print $feed_icons ?>
+            </div>
             <?php print render($page['sidebar_second']); ?>
           <?php endif; ?>
         </div>&nbsp;
